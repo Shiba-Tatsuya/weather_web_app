@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Epilogue:wght@500;700&family=Montserrat+Alternates:ital,wght@0,400;0,700;0,800;1,700&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates',sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: #fff;
+    border-radius: 1em;
+    padding: 2em 2em ;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.error{
+ text-align: center;
+ display: none;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding:.8em;
+    width: 20%;
+    height: 35px;
+    border-radius: 2rem;
+    flex: 1;
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+
+.search button{
+    
+    width: 10%;
+    border: none;
+    background: none;
+    }
+
+.weather{
+   display: none;
+   
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48;
+    color: white;
+    width: 100%;
+  }
+
+.weather-icon{
+    padding: 2rem;
+    margin: 1em;
+    width: 75%;
+}
+
+.weather h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: -1em;
+}
+
+
+.weather h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    gap: 2.4rem;
+
+}
+.col img{
+    width: 40%;
+    padding: auto;
+}
+
+.col{
+    font-size: .9em;
+    line-height: 1.2;
+    
+   
+}
+
+@media screen and (min-width:600px) {
+
+    .card{
+        width: 90%;
+        max-width: 450px; 
+    }
+
+    .weather-icon{
+        width: 20%;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .search input{
+        height: 50px;
+    }
+
+    .weather-icon{
+        width: 50%;
+        margin: 1em;
+    }
+    
+    .details{
+        margin-top: 100px;
+    }
+    .col img{
+        width: 25%;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        justify-content: center;
+        gap: 12px;
+        
+    }
+    .details{
+        margin-top: 2.5em;
+    }
+}
